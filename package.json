@@ -1,8 +1,16 @@
 {
-  "name": "RNTemplate",
+  "name": "react-native-template",
   "version": "0.0.1",
-  "description": "React Native Template",
-  "repository": "git@github.com:gjhughes/RNTemplate.git",
+  "description": "Basic React Native template with TypeScript, ESLint, Prettier and basic navigation.",
+  "private": true,
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gjhughes/RNTemplate.git"
+  },
   "author": "Gavin Hughes",
   "license": "MIT"
 }
