@@ -1,7 +1,11 @@
 import React from 'react'
 import {View} from 'react-native'
 
-const Home = () => {
+import {RootStackProps} from '../App'
+
+interface Props extends RootStackProps<'Home'> {}
+
+function Home() {
   return <View />
 }
 
