@@ -13,10 +13,10 @@ module.exports = {
       version: 'detect'
     }
   },
+  plugins: ['react-hooks'],
   extends: [
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
     'plugin:prettier/recommended'
   ],
   rules: {
@@ -25,6 +25,8 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 0,
     'react/display-name': 0,
     'react/prop-types': 0,
-    '@typescript-eslint/ban-ts-comment': 0
+    '@typescript-eslint/ban-ts-comment': 0,
+    'react-hooks/rules-of-hooks': 2,
+    'react-hooks/exhaustive-deps': 2
   }
 }

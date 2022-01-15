@@ -1,9 +1,9 @@
 import React from 'react'
 import {View} from 'react-native'
 
-import {RootStackProps} from '../App'
+// import {RootStackProps} from '../App'
 
-interface Props extends RootStackProps<'Home'> {}
+// type Props = RootStackProps<'Home'>
 
 function Home() {
   return <View />
