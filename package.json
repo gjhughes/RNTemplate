@@ -1,6 +1,6 @@
 {
   "name": "react-native-template",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Basic React Native template with TypeScript, ESLint, Prettier and basic navigation.",
   "private": true,
   "files": [

@@ -1,10 +1,10 @@
-module.exports = {
-  transformer: {
-    getTransformOptions: async () => ({
-      transform: {
-        experimentalImportSupport: false,
-        inlineRequires: true
-      }
-    })
+/* eslint-disable */
+const {makeMetroConfig} = require('@rnx-kit/metro-config')
+const MetroSymlinksResolver = require('@rnx-kit/metro-resolver-symlinks')
+
+module.exports = makeMetroConfig({
+  projectRoot: __dirname,
+  resolver: {
+    resolveRequest: MetroSymlinksResolver()
   }
-}
+})

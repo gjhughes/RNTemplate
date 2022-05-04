@@ -1,6 +1,6 @@
 {
   "name": "RNTemplate",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -24,7 +24,11 @@
   "devDependencies": {
     "@babel/core": "7.14.6",
     "@babel/runtime": "7.14.6",
+    "@react-native-community/cli-platform-android": "^7.0.1",
+    "@react-native-community/cli-platform-ios": "^7.0.1",
     "@react-native-community/eslint-config": "2.0.0",
+    "@rnx-kit/metro-config": "^1.2.31",
+    "@rnx-kit/metro-resolver-symlinks": "^0.1.16",
     "@types/jest": "^26.0.24",
     "@types/react": "^17.0.14",
     "@types/react-native": "^0.64.12",
@@ -62,5 +66,14 @@
       "<rootDir>/node_modules/"
     ],
     "cacheDirectory": ".jest/cache"
+  },
+  "pnpm": {
+    "packageExtensions": {
+      "react-native@0.65.1": {
+        "dependencies": {
+          "react-native-codegen": "0.0.7"
+        }
+      }
+    }
   }
 }
